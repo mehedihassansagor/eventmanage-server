@@ -15,7 +15,7 @@ app.get("/", (req, res) => {
   res.send("Hello World!");
 });
 
-const uri = `mongodb+srv://$eventhassan:eventhandle@cluster0.rpvut.mongodb.net/event-service?retryWrites=true&w=majority`;
+const uri = `mongodb+srv://eventhassan:eventhandle@cluster0.rpvut.mongodb.net/event-service?retryWrites=true&w=majority`;
 const client = new MongoClient(uri, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
